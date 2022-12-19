@@ -65,7 +65,7 @@ public class TaskController
         );
     }
 
-    @GetMapping("get")
+    @GetMapping("/get")
     @CrossOrigin
     public List<HashMap> getTasks(@RequestParam("id") Long id, @RequestParam("status") String status)
     {
