@@ -7,6 +7,7 @@ import me.albedim.taskmanager.service.ContributionService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
+import me.albedim.taskmanager.utils.Util;
 import java.util.List;
 
 /**
@@ -18,7 +19,7 @@ import java.util.List;
  */
 
 @RestController
-@RequestMapping("/api/contribution")
+@RequestMapping(Util.URL + "/contribution")
 public class ContributionController
 {
     private ContributionService contributionService;

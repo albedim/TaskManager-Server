@@ -5,6 +5,7 @@ import me.albedim.taskmanager.model.entity.Contribution;
 import me.albedim.taskmanager.model.entity.Task;
 import me.albedim.taskmanager.service.ContributionService;
 import me.albedim.taskmanager.service.TaskService;
+import me.albedim.taskmanager.utils.Util;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,7 +24,7 @@ import java.util.stream.Stream;
  */
 
 @RestController
-@RequestMapping("/api/task")
+@RequestMapping(Util.URL + "/task")
 public class TaskController
 {
     private TaskService taskService;

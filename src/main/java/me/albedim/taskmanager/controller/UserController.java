@@ -3,6 +3,7 @@ package me.albedim.taskmanager.controller;
 
 import me.albedim.taskmanager.model.entity.User;
 import me.albedim.taskmanager.service.UserService;
+import me.albedim.taskmanager.utils.Util;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,11 +20,10 @@ import java.util.Optional;
  */
 
 @RestController
-@RequestMapping("/api/user")
+@RequestMapping(Util.URL + "/user")
 public class UserController
 {
     private UserService userService;
-
     public UserController(UserService userService)
     {
         this.userService = userService;
